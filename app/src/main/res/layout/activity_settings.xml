@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings">
+
+    <TextView
+        android:id="@+id/sensitivity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="30dp"
+        android:text="Sensitivity" />
+
+    <SeekBar
+        android:id="@+id/sensitivity_bar"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sensitivity_text"
+        android:paddingTop="30dp" />
+
+    <TextView
+        android:id="@+id/sensitivity_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sensitivity_bar"
+        android:paddingTop="30dp"
+        android:text="50" />
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensitivity_text"
+        android:paddingLeft="10dp"
+        android:paddingTop="30dp"
+        android:paddingRight="30dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensitivity_bar"
+        android:layout_toRightOf="@id/email_text"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingTop="20dp" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensitivity_text"
+        android:layout_toRightOf="@id/editTextEmailAddress"
+        android:scaleX=".85"
+        android:scaleY=".85"
+        android:text="Update"
+        android:textSize="10sp"
+        android:translationX="-6dp"
+        android:translationY="10dp" />
+
+</RelativeLayout>
